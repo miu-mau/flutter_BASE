@@ -19,3 +19,9 @@ subprojects {
 tasks.register<Delete>("clean") {
     delete(rootProject.layout.buildDirectory)
 }
+buildscript {
+    dependencies {
+        // Добавьте эту строку
+        classpath 'com.google.gms:google-services:4.3.10' // проверьте актуальную версию
+    }
+}
